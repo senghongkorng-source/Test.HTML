@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business online shop</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">PRO-JERSEY</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+        </nav>
+
+        <div class="cart-icon" onclick="toggleCart()">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="banner">
+            <h1>Premium Football Jerseys</h1>
+            <p>High Quality • Comfortable • Affordable</p>
+        </section>
+
+        <section class="product-container" id="product-list">
+        </section>
+
+    </main>
+
+    <!-- Side Cart -->
+    <div id="side-cart" class="side-cart">
+
+        <h2>
+            Shopping Cart
+            <span class="close-btn" onclick="toggleCart()">&times;</span>
+        </h2>
+
+        <div id="cart-items"></div>
+
+        <div class="cart-total">
+            <strong>Total: $<span id="total-price">0.00</span></strong>
+        </div>
+
+        <div class="payment">
+         <img src="./QR.png" alt="KHQR" class="KHQR">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
