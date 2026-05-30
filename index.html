@@ -1,64 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business online shop</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<title>Photos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <div class="logo">PRO-JERSEY</div>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="Woww-image" src="Woww.jpg" alt="Me" width="1500" height="600">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">JANE DOE</h1>
+    <h5 class="w3-hide-large" style="white-space:nowrap">JANE DOE</h5>
+    <h3 class="w3-hide-medium w3-hide-small">PHOTOGRAPHER</h3>
+  </div>
+  
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <a href="#" class="w3-bar-item w3-button">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</header>
+<!-- Page content -->
+<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Shop</a>
-        </nav>
+  <!-- Images (Portfolio) -->
+  <img src="sunset.jpg" alt="sunset" class="sunset-image width="1000" height="500">
+  <img src="ABA.jpg" alt="ABA" class="ABA-image" width="1000" height="500">
+  <img src="pig.jpg" alt="pig" class="pig-image" width="1000" height="500">
+  <img src="alone.jpg" alt="alone" class="alone-image" width="1000" height="500">
+  <img src="Ac.jpg" alt="Ac" class="Ac-image" width="1000" height="500">
+  <img src="Cat.jpg" alt="Cat" class="Cat-image" width="1000" height="500">
 
-        <div class="cart-icon" onclick="toggleCart()">
-            <i class="fas fa-shopping-cart"></i>
-            <span id="cart-count">0</span>
-        </div>
-    </header>
 
-    <main>
+  <!-- Contact -->
+  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
+    <h3 class="w3-center">Contact</h3>
+    <hr>
+    <p>Hello Wellcome to My website. Is a Photos.</p>
 
-        <section class="banner">
-            <h1>Premium Football Jerseys</h1>
-            <p>High Quality • Comfortable • Affordable</p>
-        </section>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" required name="Name">
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" required name="Email">
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" required name="Message">
+      </div>
+      <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
+    </form><br>
+    <p>Powered by <a href="https://test-html-self-rho.vercel.app/" target="_blank" class="w3-hover-text-green">Help</a></p>
 
-        <section class="product-container" id="product-list">
-        </section>
+  </div>
 
-    </main>
-
-    <!-- Side Cart -->
-    <div id="side-cart" class="side-cart">
-
-        <h2>
-            Shopping Cart
-            <span class="close-btn" onclick="toggleCart()">&times;</span>
-        </h2>
-
-        <div id="cart-items"></div>
-
-        <div class="cart-total">
-            <strong>Total: $<span id="total-price">0.00</span></strong>
-        </div>
-
-        <div class="payment">
-         <img src="./QR.png" alt="KHQR" class="KHQR">
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+<!-- End page content -->
+</div>
 
 </body>
 </html>
